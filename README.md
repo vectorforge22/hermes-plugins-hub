@@ -1,6 +1,8 @@
 # Hermes Agent Desktop Plugins
 
-An index of in-house plugins for [Hermes Agent Desktop](https://hermesagent.com/). Use this page to discover available plugins and find their documentation or source.
+An index of in-house plugins for [Hermes Agent Desktop](https://hermesagent.com/) created by the [VectorForge22](https://github.com/vectorforge22) Team. 
+
+Use this page to discover available plugins and find their documentation or source.
 
 ## Plugin Index
 
@@ -9,12 +11,6 @@ An index of in-house plugins for [Hermes Agent Desktop](https://hermesagent.com/
 | *[Prompt Queue](https://github.com/vectorforge22/prompt-queue)* | *Kanban-style prompt queue for the Hermes desktop app. Each card is a prompt. Press ▶ Play and the queue drains strictly top-down; runs its prompt, waits for the turn to finish, waits for any background self-improvement review to fully complete (strict gate), then fires the next card.* | *0.1.0* | *Available & in active development* |
 | *[Background Runner Watch](https://github.com/vectorforge22/bg-review-watch)* | *Makes the background self-improvement review visible: a status-bar chip that shows whether a review is running, when the last one finished (and what it produced), and a fill bar counting down the turns until the next nudge fires.* | *0.1.0* | *Available* |
 | *[Tool Activity](https://github.com/vectorforge22/tool-activity)* | *Live, expandable "what is the model doing right now" chip in the desktop statusbar, for the focused session.* | *0.1.0* | *Available* |
-
-Replace the italicized placeholders as plugins are added. Remove unused example rows, and link documentation and source to their actual locations.
-
-## Adding a Plugin
-
-Add a row to the index with the plugin's name, a concise description, current version, availability status, and links. Suggested status values: **Planned**, **In development**, **Available**, and **Deprecated**.
 
 ## Disclaimer
 
