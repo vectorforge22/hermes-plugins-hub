@@ -6,11 +6,32 @@ Use this page to discover available plugins and find their documentation or sour
 
 ## Plugin Index
 
-| Plugin | Description | Version | Status |
-| --- | --- | --- | --- |
-| *[Prompt Queue](https://github.com/vectorforge22/prompt-queue)* | *Kanban-style prompt queue for the Hermes desktop app. Each card is a prompt with its own target mode (new session, existing session, project, or a profile's Bot Chat). Press ▶ Play and the queue drains strictly top-down — gated on the global model slot, background self-improvement review completion, and context compaction. Also includes markdown-folder ingest and a trust-aware `::enqueue` directive (ask-first by default).* | *1.4.4* | *Available & in active development* |
-| *[Background Review & Completion Watch](https://github.com/vectorforge22/background-review-watch)* | *Makes the background self-improvement review and batch context compaction visible: status-bar chips for review running/done/stale with live elapsed time, a turn-countdown fill bar to the next nudge, an always-visible compaction chip (compacting/done/failed/stale with committed reduction or failure class), reply-guard / review-overlap diagnostics, and a settings page that tunes the orphan-detection ceilings.* | *0.5.0* | *Catalog entry in review ([PR #141983](https://github.com/NousResearch/hermes-agent/pull/141983))* |
-| *[Tool Activity](https://github.com/vectorforge22/tool-activity)* | *Live, expandable "what is the model doing right now" chip in the desktop status bar for the focused session: current tool + target with a parallel-call count, and a panel showing in-flight elapsed timers plus the last 12 completed calls with durations and error marks.* | *0.1.0* | *Available (local install; not yet submitted to the catalog)* |
+| Plugin | What it does | Current | First catalog merge | Latest catalog merge |
+| --- | --- | --- | --- | --- |
+| [Prompt Queue](https://github.com/vectorforge22/prompt-queue) | Kanban-style prompt queue: per-card target modes (new/existing session, project, profile Bot Chat), strictly top-down drain gated on model slot / review / compaction, `::enqueue`. | 1.4.4 | v1.1.1 · 2026-10-05 | v1.4.4 · 2026-10-18 ([#140536](https://github.com/NousResearch/hermes-agent/pull/140536)) |
+| [Background Review & Completion Watch](https://github.com/vectorforge22/background-review-watch) | Status-bar chips for the background self-improvement review and batch context compaction, nudge-countdown fill bar, reply-guard diagnostics, settings page. | 0.5.0 | v0.5.0 · 2026-10-20 | v0.5.0 · 2026-10-20 ([#141983](https://github.com/NousResearch/hermes-agent/pull/141983)) |
+| [Tool Activity](https://github.com/vectorforge22/tool-activity) | Live "what is the model doing right now" chip for the focused session: in-flight tool calls with timers plus the last 12 completed. | 0.1.0 | — | — (not yet submitted) |
+
+## Catalog history
+
+One row per merge into the [Nous plugin catalog](https://github.com/NousResearch/hermes-agent/tree/main/plugin-catalog), recording the as-merged version and exact-SHA pin. Maintenance rule: add a row only when a catalog entry merges — local releases live in each plugin's CHANGELOG, not here.
+
+### Prompt Queue
+
+| Merged | Version | Pin | PR | Notes |
+| --- | --- | --- | --- | --- |
+| 2026-10-05 | 1.1.1 | da41ee7 | [#131983](https://github.com/NousResearch/hermes-agent/pull/131983) | First entry — submitted as v1.1.0 @ 4851cd1, bumped to 1.1.1 at merge with disclosure cleanup (`e1a2e08`). |
+| 2026-10-18 | 1.4.4 | 04314c0 | [#140536](https://github.com/NousResearch/hermes-agent/pull/140536) | Per-card target modes, compaction gate, markdown ingest; maintainer disclosure follow-up `f733c91` same day. |
+
+### Background Review & Completion Watch
+
+| Merged | Version | Pin | PR | Notes |
+| --- | --- | --- | --- | --- |
+| 2026-10-20 | 0.5.0 | 75c6f45 | [#141983](https://github.com/NousResearch/hermes-agent/pull/141983) | First entry, merged unchanged (commit `78f4dfe`). Renamed from `bg-review-watch` pre-publication; v0.6.0 (per-session chips) is next. |
+
+### Tool Activity
+
+Not yet submitted to the catalog (local install only).
 
 ## Disclaimer
 
