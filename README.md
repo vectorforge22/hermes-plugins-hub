@@ -1,6 +1,6 @@
 # Hermes Agent Desktop Plugins
 
-An index of in-house plugins for [Hermes Agent Desktop](https://hermesagent.com/) created by the [VectorForge22](https://github.com/vectorforge22) Team. 
+An index of in-house plugins for [Hermes Agent Desktop](https://hermesagent.com/) created by the [ARDR Systems](https://github.com/vectorforge22) Team. 
 
 Use this page to discover available plugins and find their documentation or source.
 
